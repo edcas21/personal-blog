@@ -1,0 +1,162 @@
+html {
+  font-family: Lato, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.navbar {
+  font-size: 24px;
+  max-width: 640px;
+  /* top right bottom left */
+  margin: 50px auto;
+  padding-bottom: 20px;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  margin-right: 30px;
+}
+
+.navbar__navigation {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+  color: #5c6b70;
+}
+
+.navbar__navigation-item {
+  margin-left: 50px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar__link:hover {
+    color: #ff9f22;
+}
+
+.main {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__textarea {
+  width: inherit;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #e6eff2;
+  margin-bottom: 10px;
+}
+
+.form__submit {
+  background-color: #ff9f22;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 20px;
+  padding: 5px 30px;
+}
+
+.form__submit:hover {
+  background-color: #ff6426;
+}
+
+.entry {
+  margin-top: 50px;
+}
+
+.entry__title {
+  display: inline;
+  font-size: 18px;
+}
+
+.entry__date {
+  color: #5c6b70;
+}
+
+.entry__content {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #00AA95;
+  padding: 40px 0;
+  border-top: 3px solid black;
+  font-size: 15px;
+}
+
+.footer__content {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .left {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__item {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.footer__item:hover {
+    color: #ff9f22;
+}

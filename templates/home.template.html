@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__brand">
+        <img class="navbar__logo" src="logo.svg" alt="The blog logo" />Edgar's
+        Blog
+      </div>
+
+      <ul class="navbar__navigation">
+        <li class="navbar__navigation-item">
+          <a href="#" class="navbar__link">Recent</a>
+        </li>
+
+        <li class="navbar__navigation-item">
+          <a href="#" class="navbar__link">Calendar</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main">
+      <section>
+        <h1>Add new entry</h1>
+
+        <form class="form" action="/entry" method="POST">
+          <!-- <label for="sample-field">Sample:</label> -->
+          <!-- <input type="text" name="sample" id="sample=field" /> -->
+          <p class="form__input">
+            <!-- <label class="form__label" for="entry">Entry contents</label> -->
+            <textarea
+              class="form__textarea"
+              name="content"
+              id="entry"
+              aria-label="Entry contents"
+            ></textarea>
+          </p>
+          <button class="form__submit" type="submit">Add entry</button>
+        </form>
+      </section>
+
+      <section>
+        <h1>Recent posts</h1>
+
+        <article class="entry">
+          <div>
+            <h2 class="entry__title">A bit of a chill day today</h2>
+            <time class="entry__date" datetime="20-05-2021"> • May 20</time>
+          </div>
+
+          <p class="entry__content">
+            Today I couldn't do much programming, but that's OK! Can't be too
+            awesome every day now!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <section class="left">
+          <a class="footer__item" href="#">Implemented by Edgar Cardenas</a>
+          <a class="footer__item" href="#"
+            >Project idea by Jose Salvatiera from Teclado</a
+          >
+          <a class="footer__item" href="#">Check out my other projects</a>
+        </section>
+
+        <section class="right">
+          <div class="footer__column">
+            <a class="footer__item" href="#">Recent</a>
+            <a class="footer__item" href="#">Calendar</a>
+          </div>
+          <div class="footer__column">
+            <a class="footer__item" href="#">About</a>
+            <a class="footer__item" href="#">How this was made</a>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
